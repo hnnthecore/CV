@@ -1,0 +1,139 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+\input{constants/configurations.tex}
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+\definecolor{awesome}{HTML}{\COLOR}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{\HIGHLIGHT_TITLES}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+\input{constants/personal-information.tex}
+% Available options: circle|rectangle,edge/noedge,left/right
+
+%\photo[right,rectangle,noedge]{./photo/photo.jpg}
+\name{\FIRST_NAME}{\LAST_NAME}
+\position{\POSITION}
+%\address{\ADRESS}
+\mobile{\MOBILE}
+\email{\EMAIL}
+\github{\GITHUB}
+\linkedin{\LINKEDIN}
+%\homepage{\HOMEPAGE}
+% \gitlab{\GITLAB}
+% \stackoverflow{\SO_ID}{\SO_NAME}
+% \twitter{\TWITTER}
+% \skype{\SKYPE}
+% \reddit{\REDDIT_ID}
+% \medium{\MEDIUM_ID}
+% \googlescholar{\GOOGLE_SCHOLAR_ID}{\GOOGLE_SCHOLAR_NAME}
+% \extrainfo{\EXTRA_INFO}
+
+\quote{\QUOTE}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Swisscom}
+  {Alte Tiefenaustrasse 6\\
+  3048 Ittigen\\}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Bewerbung als Junior System Engineer Virtualization}
+% How the letter is opened
+%\letteropening{Sehr geehrte Damen und Herren}
+% How the letter is closed
+\letterclosing{Freundliche Grüsse,}
+% Any enclosures with the letter
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {\FIRST_NAME \LAST_NAME~~~·~~~Motivationsschreiben}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{Über mich}
+
+Ich bin eine entschlossene und detailorientierte Person, die stets nach Präzision in allem strebt, was ich tue. Meine Leidenschaft für Technologie motiviert mich dazu, unzählige Stunden mit dem Studium, der Recherche und dem Erkunden neuer Technologien zu verbringen, um meine Neugier zu befriedigen. Ich habe ein tiefes Interesse daran, zu verstehen, wie Dinge funktionieren, was meine Liebe zum Problemlösen und zur Innovation antreibt. Ich tauche gerne in komplexe Herausforderungen ein, sei es beim Programmieren, im Systemdesign oder beim Erlernen neuer Technologien.
+
+Meine Entschlossenheit treibt mich nicht nur dazu an, Neues zu lernen, sondern die Themen, die mich interessieren, auch zu meistern. Ich bin fest davon überzeugt, dass lebenslanges Lernen der Schlüssel ist, und ich achte bewusst darauf, stets auf dem neuesten Stand der Trends in der Technologiebranche zu bleiben. Diese Einstellung hilft mir, anpassungsfähig zu bleiben und sowohl persönlich als auch beruflich kontinuierlich zu wachsen. Ich schätze die Zusammenarbeit mit Kollegen, um Ideen auszutauschen und gemeinsame Ziele zu erreichen. Mein Ziel ist es, meine technischen Fähigkeiten mit meiner Leidenschaft für Kreativität zu kombinieren, um an innovativen und bedeutsamen Projekten mitzuwirken.
+
+
+\lettersection{Was qualifiziert mich als Junior System Engineer für Virtualisierung?}
+In den letzten Jahren habe ich intensiv mit virtuellen Maschinen gearbeitet und dabei unterschiedliche Betriebssysteme wie Linux, Windows, Windows Server und  macOS installiert. Besonders stolz bin ich darauf, nach drei Tagen intensiver Arbeit erfolgreich macOS in einer virtuellen Umgebung zum Laufen gebracht zu haben.
+Meine Erfahrungen umfassen nicht nur die Installation und Konfiguration von Betriebssystemen, sondern auch Kenntnisse über deren Sicherheitsaspekte. Durch Plattformen wie TryHackMe.com, wo ich zu den Top 1000 weltweit und den Top 13 in der Schweiz gehöre, habe ich ein fundiertes Verständnis für die Sicherheitsarchitektur von Windows und Linux erlangt und konnte meine Fähigkeiten in der Betriebssystemhärtung sowie Netzwerksicherheit weiter vertiefen.
+Darüber hinaus verfüge ich über umfassendes Wissen in Bezug auf Virtualisierung. Ich kenne Konzepte wie die Erst- und Zweit-Level-Virtualisierung und verstehe, welche CPU-Eigenschaften für Virtualisierung auf AMD- und Intel-Prozessoren erforderlich sind. Auch im Bereich Netzwerktechnologien bin ich versiert, insbesondere wie diese auf virtuelle Maschinen angewendet werden, um eine nahtlose Kommunikation zwischen verschiedenen Systemen zu ermöglichen.
+
+
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
